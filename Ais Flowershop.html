@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai's Flower Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+
+         background: url(https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.jpg?s=612x612&w=0&k=20&c=eBnRobwsk2w_9MqM6bnXukIia5j-ayuMS0PeB6GHN0E=) no-repeat center center fixed;
+      background-size: cover;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            background-color: #ff9a8b;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .flower {
+            background-color: lightpink;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        form {
+            background-color: lightpink;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Add your banner image here -->
+        <img src="D:\Abos, Ailene\flower banner.jpg" alt="Beautiful Flowers Banner">
+        <div class="overlay">
+            <h1>Welcome to Ai's Flower Shop</h1>
+            <p>Explore the world of flowers with us!</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#types">Types of Flowers</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>About Flowers</h2>
+        <p>Flowers are one of the most beautiful creations of nature. They come in various colors, shapes, and sizes, each with its own unique fragrance and meaning.</p>
+    </div>
+
+    <div class="container" id="types">
+        <h2>Types of Flowers</h2>
+
+        <div class="flower">
+            <h3>Roses</h3>
+            <p>Roses are known for their beautiful petals and enchanting fragrance. They symbolize love and passion.</p>
+        </div>
+
+        <div class="flower">
+            <h3>Tulips</h3>
+            <p>Tulips are vibrant spring flowers that come in many colors. They represent perfect love and elegance.</p>
+        </div>
+
+        <div class="flower">
+            <h3>Sunflowers</h3>
+            <p>Sunflowers are bright, cheerful flowers that symbolize adoration and loyalty.</p>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; Program and Developed by: Ai's Flower Shop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
